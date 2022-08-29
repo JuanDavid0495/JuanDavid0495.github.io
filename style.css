@@ -1,0 +1,270 @@
+body{
+    margin: 1%;
+    font-family: 'Nanum Pen Script', cursive;
+    background-image: url(img/fondo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    float: left;
+    margin: 1%;
+    width: 99%;
+    height: 2%;
+}
+
+.logo1{
+    float: left;
+    position: relative;
+    width: 10%;
+    left: 10%;
+}
+
+.logo2{
+    float: right;
+    position: relative;
+    width: 15%;
+    right: 12%;
+}
+
+.title{
+    float: left;
+    position: relative;
+    margin: 1% 2% 2% 2%;
+    width: 40%;
+    left: 15%;
+    font-size: 400%;
+    text-align: center;
+}
+
+main{
+    float: left;
+    margin: 0% 1% 0% 1%;
+    width: 99%;
+    height: 80%;
+}
+
+.exclamationMark{
+    float: left;
+    margin-top: 0.7%;
+    margin-left: 6%;
+    margin-right: 0.8%;
+    width: 1%;
+}
+
+.rules{
+    padding-top: 0.3%;
+    font-size: 1.5em;
+}
+
+.leftSide{
+    float: left;
+    position: relative;
+    margin-right: 2%;
+    width: 33%;
+    height: 100%;
+}
+
+.textInput{
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 2em;
+    font-family: 'Nanum Pen Script', cursive;
+    border: none;
+    padding: 4%;
+    outline: none; /*se evita que salga margen a la hora de acceder al input*/
+    background-color: #F3F5FC;
+    resize: none;
+    border-radius: 2%;
+    box-shadow: 0px 5px 5px 5px black;
+    font-size: 2em;
+}
+
+.textInput::placeholder{
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.buttons{
+    float: left;
+    position: relative;
+    left: 1.4%;
+    margin: 2%;
+    margin-top: 0%;
+    width: 20%;
+    height: 100%;
+}
+
+.btnEncrypt{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin-top: 8%;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Nanum Pen Script', cursive;
+    color: black ;
+    border: 0.06em solid;
+    border-color: black;
+    border-radius: 24px;
+    transition: all 1s ease;
+}
+
+.btnEncrypt:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.btnDecrypt{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    margin-top: 27%;
+    margin-bottom: 27%;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    background: black;
+    border: 0.06em solid;
+    border-color: black;
+    border-radius: 24px;
+    transition: all 1s ease;
+}
+
+.btnDecrypt:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btnCopy{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    background: rgb(226, 126, 32);
+    border: 0.06em solid;
+    border-color: rgb(226, 126, 32);
+    border-radius: 24px;
+    transition: all 1s ease;
+}
+
+.btnCopy:hover{
+    background: white;
+    color: rgb(226, 126, 32);
+    cursor: pointer;
+}
+
+.rightSide{
+    float: left;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 0%;
+    width: 33%;
+    height: 100%;
+}
+
+.textOutput{
+    width: 100%;
+    height: 90%;
+    border: none;
+    padding: 4%;
+    outline: none; /*se evita que salga margen a la hora de acceder al input*/
+    font-size: 2em;
+    font-family: 'Nanum Pen Script', cursive;
+    background-color: #F3F5FC;
+    background-image: url(img/logo3.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-x: 55%;
+    background-position-y: 30%;
+    resize: none;
+    border-radius: 2%;
+    box-shadow: 0px 5px 5px 5px black;
+}
+
+.textOutput::placeholder{
+    position: relative;
+    top: 6.5em;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+footer{
+    float: left;
+    width: 99%;
+    height: 1%;
+}
+
+footer > p{
+    bottom: 45%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    .logo1{
+        position: relative;
+        left: 9%;
+        width: 25%;
+        margin-top: 2%;
+    }
+
+    .logo2{
+        position: relative;
+        left: 1%;
+        width: 38%;
+        margin-top: 2%;
+    }
+
+    .title{
+        width: 100%;
+        position: relative;
+        left: 1%;
+        top: 5%;
+        font-size: 350%;
+        margin-top: 7%;
+    }
+
+    .exclamationMark{
+        width: 5%;
+        margin: 1% 2% 0% 10%;
+    }
+
+    .leftSide, .rightSide{
+        width: 90%;
+    }
+
+    .leftSide{
+        margin-left: 2%;
+    }
+
+    .buttons{
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    .btnDecrypt{
+        margin: 2% 0% 2% 0%;
+    }
+
+    .btnCopy{
+        margin-bottom: 5%;
+    }
+    .textOutput{
+        background-position-y: 19%;
+    }
+
+    .textOutput::placeholder{
+        font-size: 1.2em;
+    }
+}

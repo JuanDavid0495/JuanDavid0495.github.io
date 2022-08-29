@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo1" src="img/logo1.png" alt="logo">
+        <img class="logo2" src="img/logo2.png" alt="logo">
+        <h1 class="title">ENCRIPTAMELO V1.0</h1>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <img class="exclamationMark" src="img/Vector.png" alt="exclamationMark">
+            <p class="rules">Solo letras minusculas y sin acentos</p>  
+
+        </section>
+
+        <section class="leftSide">
+
+            <textarea name="textInput" id="textInput" class="textInput" cols="30" rows="10" placeholder="Ingresa el texto aqui..."></textarea>
+
+        </section>
+
+        <section class="buttons">
+
+            <button type="button" id="btnEncrypt" class="btnEncrypt" onclick="encrypt()">Encriptar</button>
+            <button type="button" id="btnDecrypt" class="btnDecrypt" onclick="decrypt()">Desencriptar</button>
+            <button type="button" id="btnCopy" class="btnCopy" onclick="copy()">Copiar</button>
+
+        </section>
+
+        <section class="rightSide">
+
+            <textarea name="textOutput" id="textOutput" class="textOutput" cols="30" rows="10" placeholder="¡Aun no has ingresado texto!" readonly></textarea>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p class="copyright">&copy Developed by Juan David Araque - 2022</p>
+    
+    </footer>
+
+    <script src="script.js"></script>
+        
+</body>
+
+</html>
