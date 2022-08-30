@@ -241,11 +241,16 @@ footer > p{
     }
 
     .leftSide, .rightSide{
-        width: 88%;
+        width: 90%;
     }
 
     .leftSide{
         margin-left: 2%;
+    }
+
+    .textInput{
+        border-radius: 2%;
+        box-shadow: 0px 5px 5px 5px black;
     }
 
     .buttons{
