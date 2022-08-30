@@ -58,8 +58,9 @@ function copy(){
 
         textOutput.select();
         navigator.clipboard.writeText(textOutput.value);
+        textInput.value = textOutput.value
         textOutput.value = ""; // Limpia el textOutput
-        textOutput.style.backgroundImage = 'url("img/logo3.png")' // Coloca de nuevo la imagen de fondo
-        alert("¡Texto copiado!") // Emite alerta al usuario
+        textOutput.style.backgroundImage = 'url("img/logo3.png")'; // Coloca de nuevo la imagen de fondo
+        alert("¡Texto copiado!"); // Emite alerta al usuario
     }
 }
